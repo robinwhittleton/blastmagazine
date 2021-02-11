@@ -1,0 +1,20 @@
+#cover-1{
+
+	main {
+		background: #f16fa3;
+		color: #30343d;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 20vw;
+		font-weight: 900;
+		margin: 0;
+		transform: rotate(60deg);
+	}
+
+}

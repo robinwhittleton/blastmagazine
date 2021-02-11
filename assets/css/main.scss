@@ -1,0 +1,15 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+body {
+	background: #fff;
+	color: #090909;
+	font-size: 1em;
+	font-family: "Helvetica Neue", Grotesk, Helvetica, sans-serif;
+	font-stretch: condensed;
+	margin: 0;
+}
+
+@import "cover-1";
