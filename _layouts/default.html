@@ -2,8 +2,11 @@
 <html lang="en">
   {% include head.html %}
   <body id="{{ page.id }}">
-    {% include header.html %}
-    <main>{{ content }}</main>
+    <main>
+      {% if page.next %}<a href="{{ page.next }}">{% endif %}
+        {{ content }}
+      {% if page.next %}</a>{% endif %}
+    </main>
     {% include footer.html %}
   </body>
 </html>

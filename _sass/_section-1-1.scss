@@ -1,0 +1,56 @@
+#section-1-1 {
+
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: min-content;
+		margin: auto;
+	}
+
+	main > header {
+		align-self: flex-end;
+		margin: 1em 0 5em;
+	}
+
+	h1 ~ p {
+		@include sans-face;
+		font-size: 1.5em;
+	}
+
+	h1 ~ p > b {
+		text-transform: uppercase;
+	}
+
+	p:nth-of-type(2) {
+		text-transform: uppercase;
+		font-size: 2em;
+		margin: .25em 0;
+	}
+
+	p:nth-of-type(n+3) {
+		text-transform: capitalize;
+	}
+
+	dl {
+		text-align: center;
+		margin: 3em 0 1em;
+	}
+
+	dt,
+	dd {
+		display: inline;
+		margin: 0;
+	}
+
+	div:first-child > dt {
+		display: block;
+	}
+
+	dd > b {
+		display: block;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+
+}

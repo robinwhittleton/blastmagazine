@@ -3,13 +3,49 @@
 # only Main files contain this front matter, not partials.
 ---
 
+@mixin sans-face {
+	font-family: "Helvetica Neue", Grotesk, Helvetica, sans-serif;
+	font-stretch: condensed;
+	font-weight: 900;
+}
+@mixin serif-face {
+	font-family: Georgia, serif;
+	font-weight: 500;
+}
+
 body {
+	@include serif-face;
 	background: #fff;
 	color: #090909;
 	font-size: 1em;
-	font-family: "Helvetica Neue", Grotesk, Helvetica, sans-serif;
-	font-stretch: condensed;
+	line-height: 1.375;
 	margin: 0;
 }
 
+main > a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	@include sans-face;
+	text-transform: uppercase;
+	font-size: 14rem;
+	margin: 0;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+hr {
+	width: 20em;
+	height: .25em;
+	background: #090909;
+	border: 0;
+	margin: 2em 0;
+}
+
 @import "cover-1";
+@import "section-1-1";
