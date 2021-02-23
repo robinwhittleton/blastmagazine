@@ -4,7 +4,8 @@
 ---
 
 @mixin sans-face {
-	font-family: "Helvetica Neue", Grotesk, Helvetica, sans-serif;
+	/* Originally Blast used Grotesque №9: https://www.myfonts.com/fonts/urw/grotesque-no-9/ */
+	font-family: Impact, "Helvetica Neue", Helvetica, sans-serif;
 	font-stretch: condensed;
 	font-weight: 900;
 }
