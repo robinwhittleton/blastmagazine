@@ -4,7 +4,9 @@
   <body id="{{ page.id }}">
     <main>
       {% if page.next %}<a href="{{ page.next }}">{% endif %}
-        {{ content }}
+        <div class="container">
+          {{ content }}
+        </div>
       {% if page.next %}</a>{% endif %}
     </main>
     {% include footer.html %}

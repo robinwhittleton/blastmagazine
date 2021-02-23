@@ -23,10 +23,15 @@ body {
 	margin: 0;
 }
 
+main {
+	min-height: 100vh;
+}
+
 main > a {
 	display: block;
 	text-decoration: none;
 	color: inherit;
+	min-height: 100%;
 }
 
 h1 {
@@ -50,3 +55,4 @@ hr {
 
 @import "cover-1";
 @import "section-1-1";
+@import "section-1-2";

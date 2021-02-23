@@ -1,6 +1,6 @@
 #section-1-1 {
 
-	main {
+	.container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -8,7 +8,7 @@
 		margin: auto;
 	}
 
-	main > header {
+	.container > header {
 		align-self: flex-end;
 		margin: 1em 0 5em;
 	}
