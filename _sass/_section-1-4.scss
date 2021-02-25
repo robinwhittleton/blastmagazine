@@ -1,0 +1,21 @@
+#section-1-4 {
+
+	.container > ol {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.container li:first-child > ol {
+		list-style-type: none;
+	}
+
+	p {
+		display: flex;
+	}
+
+	span {
+		margin-left: auto;
+	}
+
+}
