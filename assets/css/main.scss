@@ -63,7 +63,8 @@ h2.underlined::after {
 }
 
 p {
-	margin: 0 0 1em;
+	text-indent: 2.5em;
+	margin: 0 0 .5em;
 }
 
 b,
@@ -86,3 +87,4 @@ hr {
 @import "section-1-3";
 @import "section-1-4";
 @import "section-1-5";
+@import "section-1-6";
