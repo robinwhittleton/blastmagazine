@@ -8,6 +8,7 @@
 	font-family: Impact, "Helvetica Neue", Helvetica, sans-serif;
 	font-stretch: condensed;
 	font-weight: 900;
+	word-spacing: .45rem;
 }
 @mixin serif-face {
 	font-family: Georgia, serif;
@@ -64,7 +65,7 @@ h2.underlined::after {
 
 p {
 	text-indent: 2.5em;
-	margin: 0 0 .5em;
+	margin: 0 0 .5rem;
 }
 
 b,
@@ -73,12 +74,20 @@ strong {
 	text-transform: uppercase;
 }
 
+em {
+	text-decoration: underline;
+	text-decoration-thickness: .25rem;
+	text-decoration-skip: none;
+	text-decoration-skip-ink: none;
+	font-style: normal;
+}
+
 hr {
 	width: 20em;
 	height: .25em;
 	background: #090909;
 	border: 0;
-	margin: 2em 0;
+	margin: 2em auto;
 }
 
 @import "cover-1";
@@ -89,3 +98,4 @@ hr {
 @import "section-1-5";
 @import "section-1-6";
 @import "section-1-7";
+@import "section-1-8";

@@ -1,0 +1,129 @@
+#section-1-8 {
+
+	@include sans-face;
+
+	h2::first-letter {
+		border: .125em solid;
+		padding: .25em .5em;
+	}
+
+	p {
+		font-size: 1.5rem;
+		text-align: center;
+		text-indent: 0;
+	}
+
+	.container {
+		> p:nth-child(2) {
+			font-size: 3.5rem;
+			text-transform: capitalize;
+
+			> small {
+				text-transform: none;
+				font-size: .5em;
+			}
+		}
+
+		> p:nth-child(4),
+		> p:nth-child(5) {
+			display: flex;
+
+			> b {
+				white-space: nowrap;
+			}
+
+			> span {
+				text-align: left;
+				margin-left: .5em;
+			}
+		}
+
+		> p:nth-child(6)::first-line {
+			font-size: 2rem;
+			text-transform: capitalize;
+		}
+
+		> p:nth-child(8) {
+			font-size: 2rem;
+		}
+
+		> ul {
+			margin-left: 50%;
+			border-left: .25em solid;
+			padding-left: 3rem;
+			list-style: none;
+
+			p {
+				text-align: left;
+				text-indent: -1rem;
+			}
+
+			small {
+				font-size: .667em;
+			}
+		}
+
+		> p:nth-child(10) {
+			text-align: left;
+
+			> strong {
+				display: block;
+				text-align: center;
+				font-size: 3rem;
+			}
+		}
+
+		> p:nth-child(11) {
+			text-align: left;
+			font-size: 1.25rem;
+
+			> strong {
+				display: block;
+				text-align: center;
+				font-size: 3rem;
+			}
+
+			> b {
+				font-size: 1.5rem;
+			}
+		}
+
+		> p:nth-child(13),
+		> p:nth-child(14) {
+			text-align: left;
+			font-size: 1.25rem;
+			margin-left: 5rem;
+			margin-right: 5rem;
+			text-indent: 2rem;
+
+			> strong {
+				display: block;
+				text-align: center;
+				font-size: 3rem;
+			}
+
+			> b {
+				font-size: 1.5rem;
+			}
+		}
+
+		> p:nth-child(15) {
+			font-size: 2.5rem;
+		}
+
+		> p:nth-child(16) {
+			font-size: 2.5rem;
+			text-align: left;
+
+			strong {
+				font-size: 3.5rem;
+			}
+		}
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 6rem;
+	}
+}
