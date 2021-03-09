@@ -1,0 +1,123 @@
+#section-1-9 {
+
+	@include sans-face;
+
+	h2::first-letter {
+		border: .125em solid;
+		padding: .25em .5em;
+	}
+
+	p {
+		font-size: 1.5rem;
+		text-align: center;
+		text-indent: 0;
+	}
+
+	.container {
+		> p:nth-child(2) {
+			font-size: 3.5rem;
+		}
+
+		> ul:nth-child(3) {
+			margin: 0 0 0 60%;
+			border-left: .25em solid;
+			padding-left: 2rem;
+			list-style: none;
+			text-transform: uppercase;
+
+			p {
+				text-align: left;
+				text-indent: -1rem;
+				margin: 0;
+			}
+
+			> li:first-child > p {
+				font-size: 1.25rem;
+				text-transform: none;
+			}
+		}
+
+		> p:nth-child(4),
+		> p:nth-child(5),
+		> p:nth-child(6) {
+			font-size: 3rem;
+			margin: 0;
+			text-align: left;
+			text-indent: 20vw;
+		}
+
+		> p:nth-child(4) {
+			text-indent: 10vw;
+		}
+
+		> p:nth-child(7) {
+			display: flex;
+
+			> b {
+				white-space: nowrap;
+			}
+
+			> span {
+				text-align: left;
+				font-size: 1.25rem;
+				margin: .25rem 0 0 1rem;
+			}
+		}
+
+		> p:nth-child(8) {
+			font-size: 3.5rem;
+		}
+
+		> ul:nth-child(9) {
+			margin: 0 0 0 55%;
+			padding-left: 1rem;
+			list-style: none;
+
+			p {
+				text-align: left;
+				text-indent: -1rem;
+				font-size: 1.25rem;
+				margin: 0;
+			}
+		}
+
+		> div:nth-child(10) {
+			display: flex;
+			margin: 2rem 0;
+
+			> h3 {
+				flex: 1;
+				margin: 0 5% 0 0;
+				text-align: right;
+			}
+
+			> ul {
+				flex: 1;
+				margin: 0;
+				padding: 0 0 0 1rem;
+				list-style: none;
+
+				p {
+					text-align: left;
+					text-indent: -1rem;
+					font-size: 1.25rem;
+					margin: 0;
+				}
+			}
+		}
+
+		> p:nth-child(11) {
+			font-size: 1.25rem;
+
+			> strong {
+				font-size: 2.5rem;
+			}
+
+			> b {
+				display: block;
+				font-size: 1.5rem;
+				margin: 1rem 0;
+			}
+		}
+	}
+}
