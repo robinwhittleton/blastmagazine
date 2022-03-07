@@ -3,13 +3,22 @@
 # only Main files contain this front matter, not partials.
 ---
 
+@font-face {
+	font-family: Oswald;
+	src: url('/assets/fonts/oswald-variable.woff2') format('woff2 supports variations'),
+		url('/assets/fonts/oswald-variable.woff2') format('woff2-variations');
+	font-display: swap;
+	font-style: normal;
+}
+
+/* Originally Blast used Grotesque №9: https://www.myfonts.com/fonts/urw/grotesque-no-9/ */
 @mixin sans-face {
-	/* Originally Blast used Grotesque №9: https://www.myfonts.com/fonts/urw/grotesque-no-9/ */
-	font-family: Impact, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: Oswald, Impact, "Helvetica Neue", Helvetica, sans-serif;
 	font-stretch: condensed;
-	font-weight: 900;
+	font-weight: 700;
 	word-spacing: .45rem;
 }
+
 @mixin serif-face {
 	font-family: Georgia, serif;
 	font-weight: 500;
