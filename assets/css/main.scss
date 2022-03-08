@@ -117,6 +117,12 @@ hr {
 	margin: 2em auto;
 }
 
+.section-divider {
+	display: block;
+	margin: 10rem auto 0;
+	width: 8rem;
+}
+
 @import "cover-1";
 @import "section-1-1";
 @import "section-1-2";
@@ -130,3 +136,4 @@ hr {
 @import "section-1-10";
 @import "section-1-11";
 @import "section-1-12";
+@import "section-1-13";

@@ -1,0 +1,166 @@
+#section-1-13 {
+
+	@include sans-face;
+
+	h2 {
+		@include boxed-numeral;
+	}
+
+	p {
+		font-size: 1.25rem;
+		line-height: 1.25;
+		text-indent: 0;
+
+		strong,
+		b {
+			font-size: 2.5rem;
+		}
+	}
+
+	.container {
+		> p:first-of-type {
+			text-align: center;
+			font-size: 1.5rem;
+			line-height: 1.125;
+			word-spacing: 1em;
+
+			> strong {
+				display: block;
+				font-size: 3rem;
+			}
+
+			> b {
+				font-size: 3rem;
+			}
+		}
+
+		> p:nth-of-type(2) {
+			font-size: 1.5rem;
+
+			> strong,
+			> b {
+				text-transform: none;
+			}
+
+			> span {
+				display: block;
+				font-size: 1.25rem;
+			}
+		}
+
+		> p:nth-of-type(3) {
+			line-height: 1.125;
+			text-align: center;
+
+			> strong {
+				display: block;
+				font-size: 3rem;
+			}
+
+			> b:first-of-type {
+				text-transform: none;
+			}
+
+			> span {
+				display: block;
+				text-align: left;
+			}
+		}
+
+		> div {
+			display: flex;
+
+			> ul {
+				margin: .8em 0 .8em 1em;
+				padding: 0;
+				list-style: none;
+
+				> :not(:first-child) > p,
+				> :first-child span,
+				> :first-child b {
+					font-size: 1.75rem;
+				}
+
+				p {
+					margin: 0;
+					line-height: 1.1;
+				}
+
+				> :last-child > p {
+					margin-left: 7.3em;
+					text-indent: -7.3em;
+				}
+			}
+		}
+
+		> p:nth-of-type(5) {
+			text-align: center;
+		}
+
+		> ul:first-of-type {
+			margin: .25em 0 .25em 55%;
+			border-left: .25em solid;
+			padding: 0 0 0 1em;
+			list-style: none;
+		}
+
+		> p:nth-of-type(6) {
+			span:first-child {
+				display: block;
+				margin-left: 10em;
+				text-indent: -10em;
+				font-size: 1.5rem;
+			}
+
+			span:last-child {
+				display: block;
+				margin-left: 65%;
+
+				> b:last-child {
+					font-size: 1.5rem;
+				}
+			}
+		}
+
+		> p:nth-of-type(7) > strong {
+			display: block;
+			text-align: center;
+			font-size: 3rem;
+		}
+
+		> p:nth-of-type(9) > b {
+			font-size: 3rem;
+		}
+
+		> p:nth-of-type(10) {
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+
+		> p:nth-of-type(11) > strong {
+			font-size: 3rem;
+		}
+
+		> p:nth-of-type(12) {
+			> span:first-child {
+				display: block;
+				margin-left: 10em;
+				text-indent: -10em;
+
+				> b:last-child {
+					font-size: 1.5rem;
+				}
+			}
+
+			> span:last-child {
+				display: block;
+				margin-left: 50%;
+
+				> b {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+
+}
