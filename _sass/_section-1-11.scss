@@ -2,9 +2,8 @@
 
 	@include sans-face;
 
-	h2::first-letter {
-		border: .125em solid;
-		padding: .25em .5em;
+	h2 {
+		@include boxed-numeral;
 	}
 
 	p {

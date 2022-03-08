@@ -24,6 +24,17 @@
 	font-weight: 500;
 }
 
+@mixin boxed-numeral {
+	font: 700 3rem / 1 Georgia, serif;
+	font-variant-numeric: lining-nums;
+	width: 1.25em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: .1em solid;
+	padding: .125em 0;
+}
+
 body {
 	@include serif-face;
 	background: #fff;
