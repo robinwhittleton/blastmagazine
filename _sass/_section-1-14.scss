@@ -1,0 +1,33 @@
+#section-1-14 {
+
+	@include sans-face;
+
+	font-size: 1.5rem;
+
+	h2 {
+		margin: 0;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 1.25rem;
+	}
+
+	p {
+		text-indent: 0;
+	}
+
+	span {
+		display: block;
+		font-size: 1rem;
+		margin-bottom: -0.5rem;
+	}
+}
