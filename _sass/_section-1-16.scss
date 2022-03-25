@@ -1,0 +1,41 @@
+#section-1-16 {
+
+	@include sans-face;
+
+	h2 {
+		@include boxed-numeral;
+	}
+
+	p {
+		font-size: 1.25rem;
+		line-height: 1.25;
+		text-indent: -2rem;
+		margin-left: 2rem;
+	}
+
+	b {
+		font-size: 1.5rem;
+	}
+
+	.container {
+		> p:first-of-type {
+			margin: 0 0 2rem;
+			text-indent: 0;
+			text-align: center;
+
+			> strong,
+			> b {
+				font-size: 2.5rem;
+			}
+		}
+
+		> p:last-of-type > span {
+			display: block;
+			margin: 2rem 0 1rem;
+
+			> strong {
+				font-size: 2.5rem;
+			}
+		}
+	}
+}
