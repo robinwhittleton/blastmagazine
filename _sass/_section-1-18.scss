@@ -1,0 +1,46 @@
+#section-1-18 {
+
+	@include sans-face;
+
+	h2 {
+		@include boxed-numeral;
+	}
+
+	p {
+		font-size: 1.25rem;
+		line-height: 1.25;
+		text-indent: 0;
+	}
+
+	b {
+		font-size: 1.5rem;
+	}
+
+	.container {
+		> p:first-of-type {
+			margin: 0 0 1rem;
+			font-size: 3rem;
+			text-align: center;
+		}
+
+		> p:nth-of-type(3) {
+			display: flex;
+
+			> b {
+				white-space: nowrap;
+			}
+
+			> span {
+				margin: .25rem 0 0 1rem;
+
+				> b {
+					font-size: 1em;
+				}
+			}
+		}
+
+		> p:nth-of-type(n+11) {
+			max-width: 70%;
+		}
+	}
+}
