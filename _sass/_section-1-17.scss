@@ -1,0 +1,67 @@
+#section-1-17 {
+
+	@include sans-face;
+
+	h2 {
+		@include boxed-numeral;
+	}
+
+	p {
+		font-size: 1.25rem;
+		line-height: 1.25;
+		text-indent: -2rem;
+		margin-left: 2rem;
+	}
+
+	b {
+		font-size: 1.5rem;
+	}
+
+	.container {
+		> p:first-of-type {
+			margin: 0 0 1rem;
+			font-size: 3rem;
+			text-indent: 0;
+			text-align: center;
+		}
+
+		> p:nth-of-type(2) {
+			margin-left: 10%;
+			margin-right: 10%;
+			text-indent: 0;
+		}
+
+		> p:nth-of-type(3) {
+			margin: 0 10% 1.5rem;
+			text-indent: 0;
+		}
+
+		> p:nth-of-type(4),
+		> p:nth-of-type(5) {
+			margin-left: 14rem;
+			text-indent: -14rem;
+
+			> strong {
+				font-size: 2.5rem;
+			}
+
+			> b {
+				font-size: 3rem;
+			}
+		}
+
+		> p:nth-of-type(6) > b:first-child {
+			display: block;
+		}
+
+		> p:nth-of-type(n+6) {
+			max-width: 60%;
+		}
+
+		> p:last-child > b {
+			display: block;
+			font-size: 2.5rem;
+			margin-left: 2rem;
+		}
+	}
+}
