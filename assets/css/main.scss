@@ -20,12 +20,12 @@
 }
 
 @mixin serif-face {
-	font-family: Georgia, serif;
+	font-family: PT Serif, Georgia, serif;
 	font-weight: 500;
 }
 
 @mixin boxed-numeral {
-	font: 700 3rem / 1 Georgia, serif;
+	font: 700 3rem / 1 PT Serif, Georgia, serif;
 	font-variant-numeric: lining-nums;
 	width: 1.25em;
 	text-align: center;
