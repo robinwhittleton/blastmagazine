@@ -140,6 +140,30 @@ figcaption {
 	width: 8rem;
 }
 
+footer > a {
+	@include sans-face;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: rgba(241,111,163,0.5);
+	color: #30343d;
+	font-size: 2rem;
+	width: 4rem;
+	height: 3rem;
+	text-align: center;
+	text-decoration: none;
+
+	> span {
+		display: block;
+		transform: rotate(60deg);
+	}
+
+	&:focus,
+	&:hover {
+		background: rgba(241,111,163,1);
+	}
+}
+
 @import "cover-1";
 @import "section-1-1";
 @import "section-1-2";
