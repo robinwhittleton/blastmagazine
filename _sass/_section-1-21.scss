@@ -1,0 +1,13 @@
+#section-1-21 {
+	.container {
+		> h2 > span {
+			display: block;
+			margin: 1rem 0;
+			font-size: 1rem;
+		}
+
+		h3 > abbr {
+			text-transform: none;
+		}
+	}
+}
